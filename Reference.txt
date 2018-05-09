@@ -1,0 +1,41 @@
+||参考資料・サイト
+1. tensorflow official website
+https://www.tensorflow.org
+
+2. 機械学習/TensorFlow初心者の雑感
+http://blog.daionet.gr.jp/knok/2015/12/02/feeling-about-tensorflow/
+
+3. Tensorflowの学習モデルの利用について
+http://blog.gclue.com/?p=577
+
+4. TensorFlowで歴代「クラウン」の画像を判別させてみた
+http://arkouji.cocolog-nifty.com/blog/2016/08/tensorflow-76e9.html
+
+5. tensorflow活用ガイド
+
+6. 【Tensorflow】TFRecordファイルでshuffle_batchしたときの偏り調査
+http://ykicisk.hatenablog.com/entry/2016/12/18/184840
+
+7. あらゆるデータを可視化するTensorBoard徹底入門
+https://deepage.net/tensorflow/2017/04/25/tensorboard.html
+
+8. 学習済みグラフをプロトコルバッファ形式で保存する
+https://tyfkda.github.io/blog/2016/09/14/tensorflow-protobuf.html
+
+9. TensorFlowで学習してモデルファイルを小さくしてコマンドラインアプリを作るシンプルな流れ
+https://qiita.com/YusukeSuzuki@github/items/476e599d84eb3d6d184d
+
+10. TensorFlowでアニメゆるゆりの制作会社を識別する
+http://kivantium.hateblo.jp/entry/2015/11/18/233834
+
+11. TensorFlow: How to freeze a model and serve it with a python API
+https://blog.metaflow.fr/tensorflow-how-to-freeze-a-model-and-serve-it-with-a-python-api-d4f3596b3adc
+
+12. 保存した学習済モデルをJAVAで利用できるようにマージする：Tensorflow入門の入門8／文系向け
+http://arakan-pgm-ai.hatenablog.com/entry/2017/05/21/163225
+
+13. Tensorflow Timelineによるパフォーマンスの計測
+https://qiita.com/jack_ama/items/c74aeecc78a77e6c9097
+
+14. TensorFlowのTFRecordを用いた「学習」をDataset API で行う
+https://www.tdi.co.jp/miso/tensorflow-tfrecord-02-datasetapi

@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+  <form method="post" action="/post" enctype="multipart/form-data">
+    <p>Image File Upload</p>
+    <input type="file" id="img_file" name="img_file" class="col-sm-4">
+    <p>How to Predict</p>
+    <input type="radio" name="how_to_predict" value="1" checked="checked">Protocal Buffer
+    <input type="radio" name="how_to_predict" value="2">Checkpoint File
+    <input type="submit" value="送信" class="btn">
+  </form>
+  {% if prediction %}
+    <p>The Prediction for the given image is {{prediction}}</p>
+  {% endif %}
+{% endblock %}

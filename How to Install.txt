@@ -1,0 +1,39 @@
+|| With AVX2 FMA
+1. sudo add-apt-repository ppa:jonathonf/python-3.6
+2. sudo apt-get update
+3. sudo apt-get install python3.6 python3.6-dev
+4. cd /usr/local/src
+5. sudo wget https://bootstrap.pypa.io/get-pip.py
+6. python3.6 get-pip.py
+7. pip3 install --upgrade virtualenv
+8. virtualenv --system-site-packages -p python3.6 ~/tensorflow
+9. source ~/tensorflow/bin/activate
+10. pip install --upgrade six
+11. pip install --upgrade wheel
+12. pip install --upgrade numpy
+
+1. sudo apt-get -y install python-software-properties software-properties-common
+2. sudo sh -c "echo 'oracle-java9-installer shared/accepted-oracle-license-v1-1 select true' | debconf-set-selections"
+3. sudo add-apt-repository -y ppa:webupd8team/java
+4. sudo apt-get update
+5. sudo apt-get -y install oracle-java9-installer
+
+1. cd /usr/local/src
+2. wget https://github.com/bazelbuild/bazel/releases/download/0.9.0/bazel-0.9.0-installer-linux-x86_64.sh
+3. chmod 755 bazel-0.9.0-installer-linux-x86_64.sh
+4. ./bazel-0.9.0-installer-linux-x86_64.sh
+5. touch WORKSPACE
+6. bazel info java-runtime
+
+1. cd /usr/local/src
+2. git clone https://github.com/tensorflow/tensorflow
+3. cd tensorflow
+4. bazel clean
+5. ./configure
+6. bazel build -c opt --copt=-mavx --copt=-mavx2 --copt=-mfma --copt=-msse4.1 --copt=-msse4.2  -k //tensorflow/tools/pip_package:build_pip_package
+7. bazel-bin/tensorflow/tools/pip_package/build_pip_package /tmp/tensorflow_pkg
+8. pip install /tmp/tensorflow_pkg/{パッケージ名}.whl
+
+|| Without
+1. cd install
+2. sh install.sh
